@@ -2,7 +2,7 @@
 
 [![npm package](https://img.shields.io/npm/v/%40cameronhunter/json-async-stringify?logo=npm)](https://www.npmjs.com/package/@cameronhunter/json-async-stringify)
 [![npm downloads](https://img.shields.io/npm/dm/%40cameronhunter/json-async-stringify?logo=npm)](https://www.npmjs.com/package/@cameronhunter/json-async-stringify)
-[![main branch status](https://img.shields.io/github/actions/workflow/status/cameronhunter/json-async-stringify/pre-merge.yml?logo=github&label=main)](https://github.com/cameronhunter/json-async-stringify/actions/workflows/pre-merge.yml)
+[![main branch status](https://img.shields.io/github/actions/workflow/status/cameronhunter/json-async-stringify/post-merge.yml?logo=github&label=main)](https://github.com/cameronhunter/json-async-stringify/actions/workflows/post-merge.yml)
 
 JSON stringify with support for an async replacer function.
 
