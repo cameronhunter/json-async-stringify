@@ -1,0 +1,32 @@
+{
+    "name": "@cameronhunter/json-async-stringify",
+    "description": "JSON stringify with support for an async replacer function",
+    "version": "0.0.0",
+    "license": "MIT",
+    "type": "module",
+    "main": "./lib/commonjs/index.js",
+    "types": "./lib/commonjs/index.d.ts",
+    "module": "./lib/module/index.js",
+    "exports": {
+        "import": "./lib/module/index.js",
+        "require": "./lib/commonjs/index.js",
+        "types": "./lib/module/index.d.ts"
+    },
+    "files": [
+        "lib/commonjs",
+        "lib/module"
+    ],
+    "scripts": {
+        "build:commonjs": "rm -rf lib/commonjs lib/*.commonjs.tsbuildinfo && tsc -p tsconfig.build.commonjs.json && echo '{ \"type\": \"commonjs\" }' > lib/commonjs/package.json",
+        "build:module": "rm -rf lib/module lib/*.module.tsbuildinfo && tsc -p tsconfig.build.module.json && echo '{ \"type\": \"module\" }' > lib/module/package.json",
+        "build": "npm run build:commonjs && npm run build:module",
+        "test": "vitest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@tsconfig/strictest": "^2.0.8",
+        "@types/node": "^24.10.1",
+        "typescript": "^5.9.3",
+        "vitest": "^4.0.10"
+    }
+}

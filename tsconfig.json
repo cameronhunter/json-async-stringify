@@ -1,0 +1,12 @@
+{
+    "extends": "@tsconfig/strictest/tsconfig.json",
+    "compilerOptions": {
+        "lib": [
+            "ES2015"
+        ]
+    },
+    "include": [
+        "src",
+        "test"
+    ]
+}
