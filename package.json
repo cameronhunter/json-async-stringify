@@ -28,5 +28,12 @@
         "@types/node": "^24.10.1",
         "typescript": "^5.9.3",
         "vitest": "^4.0.10"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cameronhunter/json-async-stringify.git"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
